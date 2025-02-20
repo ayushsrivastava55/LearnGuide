@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - LearnGuide</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LearnGuide</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#courses">My Courses</a>
+            <a href="#progress">Progress</a>
+            <a href="#profile">Profile</a>
+        </div>
+    </nav>
+
+    <main class="course-detail">
+        <div class="course-header">
+            <h1 id="courseTitle">Loading course...</h1>
+            <p id="courseDescription"></p>
+        </div>
+
+        <div class="course-content">
+            <div class="modules-section">
+                <h2>Course Modules</h2>
+                <div id="modulesList" class="modules-list"></div>
+            </div>
+
+            <div class="resources-section">
+                <h2>Resources</h2>
+                <div id="resourcesList"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="/js/course-detail.js"></script>
+</body>
+</html> 

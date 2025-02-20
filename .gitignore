@@ -1,0 +1,66 @@
+# Application Properties with sensitive data
+src/main/resources/application.properties
+
+# Compiled class files
+*.class
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Log files
+*.log
+logs/
+
+# IDE specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Spring Boot specific
+spring-boot-*.pid
+
+# H2 database files
+*.db
+*.trace.db
+*.lock.db
+
+# Maven specific
+.mvn/timing.properties
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar 

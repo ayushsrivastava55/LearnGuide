@@ -1,0 +1,30 @@
+# Server Configuration
+server.port=8080
+
+# Database Configuration
+spring.datasource.url=jdbc:h2:mem:learnguidedb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+
+# JPA Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+# Static Resources Configuration
+spring.web.resources.static-locations=classpath:/static/
+spring.mvc.static-path-pattern=/**
+
+# Disable Whitelabel Error Page
+server.error.whitelabel.enabled=false
+spring.mvc.throw-exception-if-no-handler-found=true
+
+# Security Configuration (basic setup for development)
+spring.security.user.name=your-username
+spring.security.user.password=your-password
+
+# OpenAI Configuration
+openai.api.key=your-api-key-here
+openai.timeout=60 

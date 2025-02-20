@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnGuide - Smart Learning Platform</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LearnGuide</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#courses">My Courses</a>
+            <a href="#progress">Progress</a>
+            <a href="#profile">Profile</a>
+        </div>
+        <div class="user-menu">
+            <img src="images/default-avatar.png" alt="User" class="avatar">
+            <span class="username">John Doe</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to LearnGuide</h1>
+            <p>Your personalized AI-powered learning journey starts here</p>
+            <button class="cta-button" onclick="startLearning()">Start Learning</button>
+        </section>
+
+        <section class="course-generator">
+            <h2>Generate Your Custom Course</h2>
+            <div class="generator-form">
+                <input type="text" id="topic" placeholder="What would you like to learn?">
+                <select id="difficulty">
+                    <option value="BEGINNER">Beginner</option>
+                    <option value="INTERMEDIATE">Intermediate</option>
+                    <option value="ADVANCED">Advanced</option>
+                </select>
+                <button onclick="generateCourse()">Generate Course</button>
+            </div>
+        </section>
+
+        <section class="enrolled-courses">
+            <h2>Your Courses</h2>
+            <div class="course-grid" id="courseGrid">
+                <!-- Courses will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <footer>
+        <p>&copy; 2024 LearnGuide. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
